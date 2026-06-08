@@ -1,15 +1,51 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>OpenClaw Test Deploy</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OpenClaw Test Deployment</title>
     <style>
-        body { font-family: Arial, sans-serif; text-align: center; padding: 50px; }
-        .success { color: green; font-size: 24px; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+        .container {
+            text-align: center;
+            padding: 2rem;
+        }
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+        .status {
+            margin-top: 2rem;
+            padding: 1rem 2rem;
+            background: rgba(255,255,255,0.2);
+            border-radius: 8px;
+            display: inline-block;
+        }
     </style>
 </head>
 <body>
-    <h1 class="success">✅ Deployment Test Successful!</h1>
-    <p>GitHub and Vercel are connected and working.</p>
-    <p>Deployed by OpenClaw on $(date)</p>
+    <div class="container">
+        <h1>🎉 Deployment Successful!</h1>
+        <p>Your GitHub and Vercel integration is working perfectly.</p>
+        <div class="status">
+            ✅ GitHub: Connected<br>
+            ✅ Vercel: Connected<br>
+            ✅ Test Page: Live
+        </div>
+        <p style="margin-top: 2rem; font-size: 0.9rem;">Deployed via OpenClaw</p>
+    </div>
 </body>
 </html>
